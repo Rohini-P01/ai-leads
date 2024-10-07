@@ -4,7 +4,7 @@ WORKDIR /app
 # Copy the Maven project file
 COPY pom.xml .
 # Download and cache Maven dependencies
-RUN mvn dependency:go-offline -B
+RUN mvn dependency:go-offline -
 
 # Copy the entire project source
 COPY src ./src
